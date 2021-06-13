@@ -1,0 +1,782 @@
+@media screen and (max-width: 1065px) {
+    .hide-element { display: none; }
+}
+
+.show-element { visibility: visible; }
+
+.no-display { visibility: hidden; }
+
+.nope-display { display: none; }
+
+.show-display { display: contents; }
+
+.center-content { margin: 0 auto; }
+
+.flex-box {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.blub {
+}
+
+$cursor-point: pointer;
+$layout-color: tan;
+
+html {
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1.0rem;
+	width: 100%;
+	height: 100%;
+	background-color: $layout-color;
+	background-image: url("../../ds-bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	overflow-y: hidden; 
+}
+
+#main {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.crockpot-recipe-table {
+	box-shadow: 1px 5px 11px 1px;
+	border-radius: 10px;
+    width: 58%;
+	background-color: white;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1065px) {
+    .crockpot {
+	    display: flex;
+	    flex-direction: column;
+	    & > thead > tr {
+		    display: none;
+	    }
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .crockpot {
+	    display: flex;
+	    flex-direction: column;
+	    & > thead > tr {
+		    display: none;
+	    }
+    }
+
+    .food-result-img {
+	    width: 40px;
+    }
+}
+
+@media screen and (max-width: 235px) {
+    .crockpot {
+    	overflow-x: scroll;
+	    display: flex;
+	    flex-direction: column;
+	    & > thead > tr {
+		    display: none;
+	    }
+    }
+
+    .food-result-img {
+	    width: 40px;
+    }
+}
+
+
+table { 
+    box-shadow: 2px 2px 15px 2px;
+	font-size: 1.0em;
+	& > caption { 
+		background-color: $layout-color; 
+		border: 1px solid black;
+	}
+
+	table-layout: auto;
+	width: 50%;
+	border: 2px solid black;
+	border-collapse: collapse;
+	background-color: tan; 
+	margin: 0 auto;
+	& > thead > tr > th {
+		width: 20%;
+		border: 2px solid black;
+	}
+
+	& > tbody > tr {
+
+	}
+
+	th {
+
+	}
+
+	& > tbody > tr { cursor: pointer; }
+
+    & > tbody > tr > th { border: 2px solid black; }
+
+	& > tbody > tr > td { 
+		cursor: pointer;
+		border: 2px solid black;
+		text-align: center;
+		vertical-align: baseline;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	table { 
+    box-shadow: 2px 2px 15px 2px;
+	font-size: 1.0em;
+	& > caption { 
+		background-color: $layout-color; 
+		border: 1px solid black;
+	}
+
+	table-layout: auto;
+	width: 60%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: tan; 
+	margin: 0 auto;
+	& > thead > tr > th {
+		width: 20%;
+		border: 1px solid black;
+	}
+
+	& > tbody > tr {
+
+	}
+
+	th {
+
+	}
+
+	& > tbody > tr { cursor: pointer; }
+
+    & > tbody > tr > th { border: 1px solid black; }
+
+	& > tbody > tr > td { 
+		cursor: pointer;
+		border: 1px solid black;
+		text-align: center;
+		vertical-align: baseline;
+	}
+  }
+}
+
+#crockpot-contents {
+	list-style-type: none;
+	width: 20px;
+}
+
+.transparent { 
+	opacity: 0.5; 
+	cursor: pointer;
+	outline: 0;
+}
+
+#food-table {
+	overflow-x: hidden;
+}
+
+
+.bibidy { color: pink; }
+
+.warning {
+	text-align: center;
+	background-color: red;
+	width: 50%;
+	height: 50px;
+	color: white;
+	border-radius: 40px;
+	margin: 0 auto;
+}
+
+#selected-food-container {
+	position: absolute;
+	top: -90%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+}	
+
+@media screen and (max-width: 1184px) {
+	#selected-food-container {
+		opacity: 0.5;
+	}
+}	
+
+@media screen and (max-width: 1062px) {
+	#selected-food-container {
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#selected-food-container {
+		/*left: -35%; */
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#selected-food-container {
+		left: -35%;
+	}
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+  #selected-food-container {
+	position: absolute;
+	top: -10%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) and (orientation: landscape) {
+  #selected-food-container {
+	position: absolute;
+	top: -10%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
+
+@media screen and (max-width: 590px) and (orientation: landscape) {
+  #selected-food-container {
+	position: absolute;
+	top: -70px;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
+
+#testy {
+	position: absolute;
+	top: -75%;
+	left: 0%;
+	width: 100%;
+}
+
+.fade-out {
+	animation: fade-out 0.4s;
+}
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.fade-in {
+	animation: fade-in 0.4s;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+@media screen and (max-width: 735px) {
+	#testy {
+		top: -170%;
+	}
+}
+
+@media screen and (max-width: 435px) {
+	#testy {
+		top: -170%;
+	}
+}
+
+
+
+.little { 
+	text-align: center;
+	margin: 0 auto;
+}
+
+.extra-small-space { 
+	position:  relative;
+	top: 2px; 
+}
+
+#runty-gup { 
+	position: relative;
+	top: 20px; 
+}
+
+#needle-squirt {
+	position: relative;
+	top: 10px;
+}
+
+#bitty-bait {
+	position: relative;
+	top: 10%;
+}
+
+#smolt {
+	position: relative;
+	top: 0px;
+	padding-top: 60%;
+}
+
+#popper {
+	position: relative;
+	top: 0px;
+	padding-top:  40%;
+}
+
+#fall {
+	position: relative;
+	top: 0px;
+	padding-top: 10%;
+}
+
+#bloomfin {
+	position: relative;
+	top: 0px;
+	padding-top: 15%;
+}
+
+#spittle {
+	position: relative;
+	top: 0px;
+	padding-top: 30%;
+}
+
+.small-space { 
+	position: relative;
+	top: 0%; 
+	padding-top: 5px;
+}
+
+.medium-space { 
+	position: relative;
+	top: 0%; 
+	padding-top: 20px;
+}
+
+.spacey {
+	position:  relative;
+	top: 0%; 
+	padding-top: 12px;
+}
+
+@media screen and (max-width: 450px) {
+	img.extra-small-space { 
+		position:  relative;
+		top: 8px;
+		width: 65px; 
+	}
+
+	img.small-space { 
+		top: 0%; 
+		padding-top: 15px;
+		width: 70px;
+	}
+
+	img.spacey {
+	width: 70px; 
+		margin-top: 0px; 
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#needle-squirt {
+	    position: relative;
+	    top: 10px;
+	    padding-top: 15%;
+    }
+
+	#bitty-bait {
+	    position: relative;
+	    top: 10%;
+	    padding-top:  30%;
+    }
+
+    #popper {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 60%;
+    }
+
+    #fall {
+	    position: relative;
+	    top: 10px;
+	    padding-top: 30%;
+    }
+
+    #bloomfin {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 30%;
+    }
+
+    #spittle {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 40%;
+    }
+	.extra-small-space { margin-top: 4px; }
+
+	.small-space { 
+		top: 0%; 
+	}
+
+	.spacey { 
+		/*
+		position:  relative;
+	    top: 100%; 
+	    padding-top: 0px; 
+	    padding-bottom: -50px;
+	    */
+	}
+
+	.medium-space { 
+	    position: relative;
+	    top: 95%; 
+	    padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+	
+	.extra-small-space { margin-top: 4px; }
+
+	.small-space { margin-top: 0px; }
+
+	.spacey { margin-top: 20px; }
+
+	.medium-space { 
+	    position: relative;
+	    top: -15%; 
+	    padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+	
+	.extra-small-space { margin-top: 4px; }
+
+	img.small-space { 
+		top: 0%;
+		padding-top:  15px;
+	}
+
+	.medium-space {
+		top: -5%;
+	}
+
+	.spacey { margin-top: 0px; }
+}
+
+#selected-food {
+	position: relative;
+	top: -40%;
+	left: -37px;
+	& > ul > li > img {
+		width: 55px;
+	}
+}
+
+.sticky-pos { 
+	position: -moz-fixed;
+    position: -webkit-fixed;
+    position: -o-fixed;
+    position: -ms-fixed;
+    position: fixed;
+	bottom: 0%;
+	left: 21.0%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+
+
+@media screen and (max-width: 400px) {
+    #food {
+	    & > ul > li > img { width: 40px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+#container {
+	position: absolute;
+	left: 13.5%;
+	top: -30%;
+	height: 100%;
+	& > div.food-container-tray {
+		z-index: 0;
+	    border-top: 2px solid black;
+	    border-left: 2px solid black;
+	    border-right: 2px solid black;
+	    &:nth-child(4) {
+	    	border-bottom: 2px solid black;
+	    };
+	    background-color: $layout-color;
+	    width: 65px;
+	    height: 65px;
+    }
+}
+
+#crockpot {
+	& > button {
+		cursor: pointer;
+		background-color: tan;
+		border: 1px solid black;
+		text-align: center;
+		padding: 10px 30px 10px 30px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+#crockpot {
+	font-size: 0.6rem;
+	    & > img { 
+		    width: 70px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 40px;
+    		height: 40px;
+    	}
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+#crockpot {
+	font-size: 0.6rem;
+	    & > img { 
+		    width: 60px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+
+@media screen and (max-width: 400px) and (orientation: landscape) {
+#crockpot {
+	font-size: 0.6rem;
+	    & > img { 
+		    width: 40px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 5px 10px 5px 10px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 40px;
+    		height: 40px;
+    	}
+    }
+}
+
+#y-scroll { 
+	width: 100%;
+	height: 500px;
+	margin-top: -220px;
+}
+
+@media screen and (max-width: 1065px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 350px;
+	    margin-top: -200px;
+    }
+}
+
+@media screen and (max-width: 735px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 350px;
+	    margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 250px;
+	    margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 200px;
+	    margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+#crockpot {
+	    font-size: 0.5rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 5px 10px 5px 10px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 40px;
+    		height: 40px;
+    	}
+    }
+}
+
+#crockpot-result {
+	box-shadow: 20px 10px 15px 2px;
+}
+
+@media screen and (max-width: 300px) {
+	#crockpot-result {
+	    box-shadow: 5px 5px 15px 2px;
+    }
+}
+
+.cursor-on-off {
+	cursor: pointer;
+	&:hover {
+        transition: 0.5s;
+		width: 170px;
+	}
+
+	&:not(hover) {
+		transition: 0.5s;
+		width: 120px;
+	}
+}
+
+#cond1 { 
+	width: 250px; 
+}
+
+#cond2 { width: 90px; }
+
+img.dlc-img-size { 
+	display: inline;
+	margin: 0 auto;
+	width: 120px;
+}
+
+@media screen and (max-width: 600px) {
+	img.dlc-img-size { 
+	    display: block;
+	    margin: 0 auto;
+	    width: 120px;
+    }
+
+    .cursor-on-off {
+	    cursor: pointer;
+	    &:hover {
+            transition: 0.5s;
+		    width: 170px;
+	    }
+
+	    &:not(hover) {
+		    transition: 0.5s;
+		    width: 120px;
+	    }
+    }
+
+    #cond1 { width: 250px; }
+
+    #cond2 { width: 90px; }
+}
+
+@media screen and (max-width: 400px) {
+	img.dlc-img-size { 
+	    display: block;
+	    margin: 0 auto;
+	    width: 120px;
+    }
+
+    .cursor-on-off {
+	    cursor: pointer;
+	    &:hover {
+            transition: 0.5s;
+		    width: 120px;
+	    }
+
+	    &:not(hover) {
+		    transition: 0.5s;
+		    width: 70px;
+	    }
+    }
+
+    #cond1 { width: 120px; }
+
+    #cond2 { width: 90px; }
+}
