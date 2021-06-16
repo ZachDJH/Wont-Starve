@@ -824,6 +824,19 @@ table > tbody > tr > td {
     height: 40px;
   }
 }
+@media screen and (max-width: 870px) and (orientation: landscape) and (max-height: 415px) {
+  #crockpot {
+    font-size: 0.5rem;
+  }
+  #crockpot > img {
+    width: 70px;
+  }
+  #crockpot > button {
+    font-size: 0.6rem;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+  }
+}
 @media screen and (max-width: 870px) and (orientation: landscape) and (max-height: 367px) {
   #crockpot {
     font-size: 0.5rem;
