@@ -257,6 +257,16 @@ table {
   }
 }
 
+@media screen and (max-width: 860px) and (orientation: landscape) and (max-height: 367px) {
+  #selected-food-container {
+	position: absolute;
+	top: -80%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
+
 @media screen and (max-width: 840px) and (orientation: landscape) and (max-height: 367px) {
   #selected-food-container {
 	position: absolute;
@@ -862,6 +872,38 @@ table {
     		width: 40px;
     		height: 40px;
     	}
+    }
+}
+
+@media screen and (max-width: 870px) and (orientation: landscape) and (max-height: 367px) {
+#crockpot {
+	font-size: 0.5rem;
+	    & > img { 
+		    width: 70px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	    }
+	
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation: landscape) and (max-height: 367px) {
+#crockpot {
+	font-size: 0.5rem;
+	    & > img { 
+		    width: 70px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	    }
+	
     }
 }
 
