@@ -1814,3 +1814,6 @@ ReactDOM.render(
 	                     shipwreckedMeals={shipwreckedMeals} />,
 	document.getElementById('timer-example')
 );
+
+alert(window.innerWidth);
+alert(window.innerHeight);
