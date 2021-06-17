@@ -1173,8 +1173,8 @@ table > tbody > tr > td {
   #y-scroll {
     overflow-y: scroll;
     width: 100%;
-    height: 250px;
-    margin-top: -16px;
+    height: 200px;
+    margin-top: 33px;
   }
 }
 @media screen and (max-width: 680px) and (orientation: landscape) {

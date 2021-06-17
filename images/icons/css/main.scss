@@ -1282,11 +1282,11 @@ table {
 
 @media screen and (max-width: 735px) and (orientation: landscape) {
 	#y-scroll { 
-	    overflow-y: scroll; 
-	    width: 100%;
-	    height: 250px;
-	    margin-top: -16px;
-    }
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 200px;
+	  margin-top: 33px;
+  }
 }
 
 @media screen and (max-width: 680px) and (orientation: landscape) {
