@@ -1226,6 +1226,15 @@ table {
     }
 }
 
+@media screen and (max-width: 870px) and (orientation: landscape) and (max-height: 309px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 120px;
+	    margin-top: -17px;
+    }
+}
+
 @media screen and (max-width: 850px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
