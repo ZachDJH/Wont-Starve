@@ -246,6 +246,15 @@ table {
 	height: 100%;
   }
 }
+@media screen and (max-width: 978px) and (orientation: landscape) and (max-height: 480px) {
+  #selected-food-container {
+	position: absolute;
+	top: -90%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
 
 @media screen and (max-width: 820px) and (orientation: landscape) {
   #selected-food-container {
@@ -886,6 +895,22 @@ table {
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) and (max-height: 415px) {
+#crockpot {
+	font-size: 0.5rem;
+	    & > img { 
+		    width: 70px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	    }
+	
+    }
+}
+
+@media screen and (max-width: 980px) and (orientation: landscape) and (max-height: 480px) {
 #crockpot {
 	font-size: 0.5rem;
 	    & > img { 
