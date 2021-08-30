@@ -724,7 +724,7 @@ class CrockpotRecipeTable extends React.Component {
 		const dlcButtons = ['../images/icons/dlc/Don\'t_Starve_Together_Logo.webp', '../images/icons/dlc/Shipwrecked_Logo.webp', '../images/icons/dlc/Hamlet_Logo.webp'];
 		return(
 			<div id="main">
-			    <div class={'white-background'}>
+			    <div className={'white-background'}>
 			        <h1>Won't Starve Crockpot Recipe App</h1>
 			        <p>Welcome to the Won't Starve App! It's very easy to use.<br/>
 			           First, select 4 food items. Once you've done that, hit the cook button<br/>
