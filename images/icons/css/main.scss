@@ -1,3 +1,7 @@
+@import url('http://fonts.cdnfonts.com/css/belisa-plumilla-manual');
+$cursor-point: pointer;
+$layout-color: tan;
+$bg-color: white;
 @media screen and (max-width: 1065px) {
     .hide-element { display: none; }
 }
@@ -21,11 +25,21 @@
 	width: 100%;
 }
 
+.white-background { 
+	font-size: 1.7rem;
+	background-color: $bg-color;
+	width:  50%; 
+	border-radius: 8px;
+	padding-top: 10px;
+	margin: 0 auto;
+	/*color: lightgrey;*/
+	& > p { font-size: 2.0rem; }
+}
+
 .blub {
 }
 
-$cursor-point: pointer;
-$layout-color: tan;
+
 
 html {
 	width: 100%;
@@ -35,7 +49,8 @@ html {
 }
 
 body {
-	font-size: 1.0rem;
+	font-size: 1.4rem;
+	font-family: 'Belisa plumilla manual', 'sans-serif';
 	width: 100%;
 	height: 100%;
 	background-color: $layout-color;
@@ -49,6 +64,11 @@ body {
 	overflow-y: hidden; 
 }
 
+button { 
+	font-family: 'Belisa plumilla manual', 'sans-serif';
+	font-size: 1.2rem;
+ }
+
 #main {
 	width: 100%;
 	height: 100%;
@@ -58,7 +78,7 @@ body {
 .crockpot-recipe-table {
 	box-shadow: 1px 5px 11px 1px;
 	border-radius: 10px;
-    width: 58%;
+  width: 58%;
 	background-color: white;
 	margin: 0 auto;
 }
@@ -105,7 +125,7 @@ body {
 
 table { 
     box-shadow: 2px 2px 15px 2px;
-	font-size: 1.0em;
+	font-size: 1.2em;
 	& > caption { 
 		background-color: $layout-color; 
 		border: 1px solid black;
@@ -142,10 +162,14 @@ table {
 	}
 }
 
+@media screen and (max-width: 1465px) {
+	table { font-size: 1.4rem; }
+}
+
 @media screen and (max-width: 300px) {
 	table { 
     box-shadow: 2px 2px 15px 2px;
-	font-size: 1.0em;
+	font-size: 1.4em;
 	& > caption { 
 		background-color: $layout-color; 
 		border: 1px solid black;
@@ -233,19 +257,72 @@ table {
 
 @media screen and (max-width: 500px) {
 	#selected-food-container {
+		top: -60%;
 		left: -35%;
 	}
 }
 
+@media screen and (max-height: 480px) and (orientation: landscape) {
+	  #selected-food-container {
+	    position: absolute;
+	    top: -72%;
+	    left: -35.3%;
+	    width: 0%;
+	    height: 100%;
+    }
+}
+
+@media screen and (max-height: 340px) and (orientation: landscape) {
+	  #selected-food-container {
+	    position: absolute;
+	    top: -30%;
+	    left: -35.3%;
+	    width: 0%;
+	    height: 100%;
+    }
+}
+
+@media screen and (max-height: 270px) and (orientation: landscape) {
+    #selected-food-container {
+	      position: absolute;
+	      top: -20%;
+	      left: -35.3%;
+	      width: 0%;
+	      height: 100%;
+    }
+}
+
+@media screen and (max-width: 220px) and (max-height: 350px) {
+    #selected-food-container {
+	      position: absolute;
+	      top: -40%;
+	      left: -35.3%;
+	      width: 0%;
+	      height: 100%;
+    }
+}
+/*
+@media screen and (max-width: 423px) {
+	#selected-food-container {
+	    position: absolute;
+	    top: -163%;
+	    left: -35.3%;
+	    width: 0%;
+	    height: 100%;
+    }
+}
+*/
+/*
 @media screen and (max-width: 950px) and (orientation: landscape) {
   #selected-food-container {
 	position: absolute;
-	top: -10%;
+	top: -105%;
 	left: -35.3%;
 	width: 0%;
 	height: 100%;
   }
 }
+
 @media screen and (max-width: 978px) and (orientation: landscape) and (max-height: 480px) {
   #selected-food-container {
 	position: absolute;
@@ -329,7 +406,7 @@ table {
 @media screen and (max-width: 660px) and (orientation: landscape) and (max-height: 300px) {
   #selected-food-container {
 	position: absolute;
-	top: -62%;
+	top: -35%;
 	left: -35.3%;
 	width: 0%;
 	height: 100%;
@@ -357,9 +434,36 @@ table {
   }
 }
 
+@media screen and (max-width: 680px) and (orientation: landscape) and (max-height: 340px) {
+  #selected-food-container {
+	position: absolute;
+	top: -46%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
 
+@media screen and (max-width: 370px) and (max-height: 700px) {
+  #selected-food-container {
+	position: absolute;
+	top: -195%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
 
-
+@media screen and (max-width: 330px) and (max-height: 780px) {
+  #selected-food-container {
+	position: absolute;
+	top: -195%;
+	left: -35.3%;
+	width: 0%;
+	height: 100%;
+  }
+}
+*/
 #testy {
 	position: absolute;
 	top: -75%;
@@ -531,6 +635,99 @@ table {
 	padding-top: 50%;
 }
 
+@media screen and (max-width: 660px) {
+	#runty-gup { 
+	    position: relative;
+	    top: 0px; 
+	    padding-top: 25%;
+	    & > img { width: 60px; }
+    }
+
+#needle-squirt {
+	position: relative;
+	top: 5px;
+	padding-top: 25%;
+	& > img { width: 60px; }
+}
+
+#bitty-bait {
+	position: relative;
+	top: 10px;
+	padding-top: 20%;
+	& > img { width: 60px; }
+}
+
+#smolt {
+	position: relative;
+	top: 0px;
+	padding-top: 60%;
+}
+
+#popper {
+	position: relative;
+	top: 0px;
+	padding-top: 50%;
+	& > img { width: 75px; }
+}
+
+#fall {
+	position: relative;
+	top: 0px;
+	padding-top: 30%;
+	& > img { width: 70px; }
+}
+
+#bloomfin {
+	position: relative;
+	top: 0px;
+	padding-top: 30%;
+	& > img { width: 65px; }
+}
+
+#scorching-sun {
+	position: relative;
+	top: 0px;
+	& > img { width: 58px; }
+}
+
+#spittle {
+	position: relative;
+	top: 0px;
+	padding-top: 50%;
+	& > img { width: 60px; }
+}
+
+#mud {
+	position: relative;
+	top: 0px;
+	padding-top: 100%;
+	& > img { width: 65px; }
+}
+
+#deep {
+	position: relative;
+	top: 0px;
+	padding-top: 100%;
+}
+
+#dandy {
+	position: relative;
+	top: 0px;
+	padding-top: 90%;
+}
+
+#black-cat {
+	position: relative;
+	top: 5px;
+	padding-top: 110%;
+}
+/*
+#food {
+	    & > ul > li > img { width: 50px; }
+    }
+*/
+}
+
 @media screen and (max-width: 600px) and (orientation: landscape) {
 	#runty-gup { 
 	    position: relative;
@@ -604,10 +801,11 @@ table {
 	padding-top: 110%;
 }
 
+/*
 #food {
 	    & > ul > li > img { width: 50px; }
     }
-
+*/
 }
 
 @media screen and (max-width: 450px) {
@@ -633,19 +831,20 @@ table {
 	#runty-gup { 
 	    position: relative;
 	    top: 5px; 
-	    padding-top: 15%;
+	    padding-top: 0%;
     }
 
 	#needle-squirt {
 	    position: relative;
 	    top: 5px;
-	    padding-top: 15%;
+	    padding-top: 10%;
     }
 
 	#bitty-bait {
 	    position: relative;
 	    top: -10%;
-	    padding-top: 20%;
+	    padding-top: 30%;
+	    & > img { width: 65px; }
     }
 
     #smolt {
@@ -657,25 +856,37 @@ table {
     #popper {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 60%;
+	    padding-top: 80%;
+	    & > img { width: 70px; }
     }
 
     #fall {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 30%;
+	    padding-top: 20%;
+	    & > img { 
+	    	width: 75px; 
+	    }
     }
 
     #bloomfin {
 	    position: relative;
-	    top: 0px;
-	    padding-top: 30%;
+	    top: 10px;
+	    padding-top: 20%;
+	    & > img { width: 65px; }
+    }
+
+    #scorching-sun {
+    	position: relative;
+    	top: 0px;
+    	& > img { width: 60px; }
     }
 
     #spittle {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 40%;
+	    padding-top: 45%;
+	    & > img { width: 65px; }
     }
 
     #mud {
@@ -687,43 +898,43 @@ table {
     #deep {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 80%;
+	    padding-top: 110%;
     }
 
     #dandy {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 80%;
+	    padding-top: 100%;
     }
 
     #black-cat {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 85%;
+	    padding-top: 120%;
     }
 
     #corn-cod {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 90%;
+	    padding-top: 110%;
     }
 
     #dappled-koi {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 80%;
+	    padding-top: 100%;
     }
 
     #golden-koi {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 80%;
+	    padding-top: 100%;
     }
 
     #ice-bream {
 	    position: relative;
 	    top: 0px;
-	    padding-top: 70%;
+	    padding-top: 90%;
     }
 
 	.extra-small-space { margin-top: 4px; }
@@ -749,34 +960,199 @@ table {
 }
 
 @media screen and (max-width: 350px) {
-	
-	.extra-small-space { margin-top: 4px; }
-
-	.small-space { margin-top: 0px; }
-
-	.spacey { margin-top: 20px; }
-
-	.medium-space { 
+	#runty-gup { 
 	    position: relative;
-	    top: -15%; 
-	    padding-top: 15px;
+	    top: 5px; 
+	    padding-top: 15%;
+    }
+
+	#needle-squirt {
+	    position: relative;
+	    top: 5px;
+	    padding-top: 25%;
+    }
+
+	#bitty-bait {
+	    position: relative;
+	    top: -10%;
+	    padding-top: 30%;
+    }
+
+    #smolt {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 60%;
+    }
+
+    #popper {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 80%;
+    }
+
+    #fall {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 50%;
+    }
+
+    #bloomfin {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 30%;
+    }
+
+    #spittle {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 40%;
+    }
+
+    #mud {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #deep {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #dandy {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #black-cat {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 110%;
+    }
+
+    #corn-cod {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 110%;
+    }
+
+    #dappled-koi {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #golden-koi {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #ice-bream {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 90%;
     }
 }
 
-@media screen and (max-width: 240px) {
-	
-	.extra-small-space { margin-top: 4px; }
+@media screen and (max-width: 350px) {
+	#runty-gup { 
+	    position: relative;
+	    top: 5px; 
+	    padding-top: 15%;
+    }
 
-	img.small-space { 
-		top: 0%;
-		padding-top:  15px;
-	}
+	#needle-squirt {
+	    position: relative;
+	    top: 5px;
+	    padding-top: 25%;
+    }
 
-	.medium-space {
-		top: -5%;
-	}
+	#bitty-bait {
+	    position: relative;
+	    top: -10%;
+	    padding-top: 30%;
+    }
 
-	.spacey { margin-top: 0px; }
+    #smolt {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 60%;
+    }
+
+    #popper {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 80%;
+    }
+
+    #fall {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 50%;
+    }
+
+    #bloomfin {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 30%;
+    }
+
+    #spittle {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 40%;
+    }
+
+    #mud {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #deep {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #dandy {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #black-cat {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 110%;
+    }
+
+    #corn-cod {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 110%;
+    }
+
+    #dappled-koi {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #golden-koi {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 100%;
+    }
+
+    #ice-bream {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 90%;
+    }
 }
 
 #selected-food {
@@ -788,10 +1164,21 @@ table {
 	}
 }
 
+@media screen and (max-width: 450px) {
+	#selected-food {
+	    position: relative;
+	    top: -44%;
+	    left: -37px;
+	    & > ul > li > img {
+		    width: 45px;
+	    }
+    }
+}
+
 @media screen and (max-width: 400px) {
 	#selected-food {
 	    position: relative;
-	    top: -39%;
+	    top: -44%;
 	    left: -37px;
 	    & > ul > li > img {
 		    width: 55px;
@@ -813,7 +1200,18 @@ table {
 @media screen and (max-width: 360px) {
 	#selected-food {
 	    position: relative;
-	    top: -39%;
+	    top: -44%;
+	    left: -37px;
+	    & > ul > li > img {
+		    width: 55px;
+	    }
+    }
+}
+
+@media screen and (max-width: 321px) {
+	#selected-food {
+	    position: relative;
+	    top: -44%;
 	    left: -37px;
 	    & > ul > li > img {
 		    width: 55px;
@@ -823,10 +1221,10 @@ table {
 
 .sticky-pos { 
 	position: -moz-fixed;
-    position: -webkit-fixed;
-    position: -o-fixed;
-    position: -ms-fixed;
-    position: fixed;
+  position: -webkit-fixed;
+  position: -o-fixed;
+  position: -ms-fixed;
+  position: fixed;
 	bottom: 0%;
 	left: 21.0%;
 	margin-left: auto;
@@ -834,8 +1232,16 @@ table {
 	background-color: white;
 }
 
+@media screen and (max-width: 660px) {
+    #food {
 
+    }
 
+    #testy {
+		top: -180%;
+	}
+}
+/*
 @media screen and (max-width: 400px) {
     #food {
 	    & > ul > li > img { width: 40px; }
@@ -845,9 +1251,102 @@ table {
 		top: -180%;
 	}
 }
+*/
 
+@media screen and (max-width: 650px) and (max-height: 335px) and (orientation: landscape) {
+    #food {
+	    & > ul > li > img { width: 50px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+/*
+@media screen and (max-width: 650px) and (max-height: 336px) and (orientation: landscape) {
+    #food {
+	    & > ul > li > img { width: 64px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+*/
+@media screen and (max-width: 450px) {
+    #food {
+	    & > ul > li > img { width: 50px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+@media screen and (max-width: 350px) and (max-height: 280px) {
+    #food {
+	    & > ul > li > img { width: 40px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+/*
+@media screen and (max-width: 350px) {
+    #food {
+	    & > ul > li > img { width: 50px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+*/
+@media screen and (max-width: 325px) {
+    #food {
+	    & > ul > li > img { width: 54px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+@media screen and (max-width: 325px) and (max-height: 270px) {
+    #food {
+	    & > ul > li > img { width: 43px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+@media screen and (max-width: 281px) {
+    #food {
+	    & > ul > li > img { width: 50px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
+
+@media screen and (max-width: 280px) {
+    #food {
+	    & > ul > li > img { width: 40px; }
+    }
+
+    #testy {
+		top: -180%;
+	}
+}
 
 #container {
+	/*box-shadow: 8px 10px 10px 2px;*/
 	position: absolute;
 	left: 13.5%;
 	top: -30%;
@@ -877,7 +1376,48 @@ table {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
+#crockpot {
+	font-size: 0.6rem;
+	    & > img { 
+		    width: 60px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 60px;
+    		height: 60px;
+    	}
+    }
+}
+
+@media screen and (max-width: 1250px) and (max-height: 750px) and (orientation: landscape) {
+#crockpot {
+	font-size: 0.8rem;
+	    & > img { 
+		    width: 70px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 60px;
+    		height: 60px;
+    	}
+    }
+
+    button { 
+	    	font-size: 1.1rem;
+	    	font-weight: bold;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	  }
+}
+
+@media screen and (max-width: 423px) {
 #crockpot {
 	font-size: 0.6rem;
 	    & > img { 
@@ -888,12 +1428,42 @@ table {
 
     #container {
     	& > div.food-container-tray {
-    		width: 40px;
-    		height: 40px;
+    		width: 60px;
+    		height: 60px;
     	}
     }
+
+    button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	  }
 }
 
+@media screen and (max-width: 735px) {
+#crockpot {
+	font-size: 0.8rem;
+	    & > img { 
+		    width: 60px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 60px;
+    		height: 60px;
+    	}
+    }
+
+    button { 
+	    	font-size: 1.1rem;
+	    	font-weight:  bold;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	  }
+}
+/*
 @media screen and (max-width: 1200px) and (orientation: landscape) and (max-height: 415px) {
 #crockpot {
 	font-size: 0.5rem;
@@ -1039,6 +1609,29 @@ table {
     }
 }
 
+@media screen and (max-width: 660px) and (orientation: landscape) {
+#crockpot {
+	font-size: 0.6rem;
+	    & > img { 
+		    width: 60px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.6rem;
+	    	text-align: center;
+	    	padding: 10px 20px 10px 20px; 
+	    }
+	
+    }
+
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+
 @media screen and (max-width: 600px) and (orientation: landscape) {
 #crockpot {
 	font-size: 0.6rem;
@@ -1062,6 +1655,7 @@ table {
     }
 }
 
+
 @media screen and (max-width: 400px) and (orientation: landscape) {
 #crockpot {
 	font-size: 0.6rem;
@@ -1084,6 +1678,15 @@ table {
     	}
     }
 }
+*/
+@media screen and (max-width: 350px) {
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
 
 #y-scroll { 
 	width: 100%;
@@ -1091,24 +1694,170 @@ table {
 	margin-top: -220px;
 }
 
+@media screen and (max-width: 1485px) and (max-height: 655px) and (orientation: landscape) {
+	#y-scroll { 
+		/*
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 140px;
+	  
+	  -webkit-margin-before: 60px;
+	  */
+	  margin-top: -252px;
+  }
+}
+
+@media screen and (max-width: 1485px) and (max-height: 555px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 140px;
+	  margin-top: -35px;
+	  -webkit-margin-before: -35px;
+  }
+}
+
 @media screen and (max-width: 1065px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 350px;
-	    margin-top: -200px;
+	    margin-top: -245px;
+	    -webkit-margin-before: -200px;
     }
+}
+
+@media screen and (max-width: 1065px) and (max-height: 1450px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 350px;
+	    margin-top: -181px;
+	    -webkit-margin-before: -182px;
+    }
+}
+
+@media screen and (max-width: 1065px) and (max-height: 750px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 350px;
+	    margin-top: -232px;
+	    -webkit-margin-before: -232px;
+    }
+}
+
+@media screen and (max-width: 1065px) and (max-height: 615px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 140px;
+	  margin-top: 10px;
+	  -webkit-margin-before: 60px;
+  }
+}
+
+@media screen and (max-width: 1065px) and (max-height: 615px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 140px;
+	  margin-top: -22px;
+	  -webkit-margin-before: -22px;
+  }
+}
+
+@media screen and (max-width: 1065px) and (max-height: 450px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 97px;
+	  margin-top: 22px;
+	  -webkit-margin-before: 21px;
+  }
 }
 
 @media screen and (max-width: 735px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 350px;
-	    margin-top: 0px;
+	    height: 227px;
+	    margin-top: 40px;
+	    -webkit-margin-before: 41px;
     }
 }
 
+@media screen and (max-width: 735px) and (max-height: 415px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 117px;
+	  margin-top: 151px;
+	  -webkit-margin-before: 151px;
+  }
+}
+
+@media screen and (max-width: 735px) and (max-height: 270px) and (orientation: landscape) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 95px;
+	  margin-top: 173px;
+	  -webkit-margin-before: 173px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 219px;
+	    margin-top: 66px;
+	    -webkit-margin-before: 64px;
+    }
+}
+
+@media screen and (max-width: 660px) and (max-height: 615px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 153px;
+	    margin-top: 134px;
+	    -webkit-margin-before: 131px;
+    }
+}
+
+@media screen and (max-width: 660px) and (max-height: 335px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 103px;
+	    margin-top: 185px;
+	    -webkit-margin-before: 181px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 165px;
+	    margin-top: 68px;
+	    -webkit-margin-before: 64px;
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 335px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 93px;
+	    margin-top: 140px;
+	    -webkit-margin-before: 136px;
+    }
+}
+
+/*
 @media screen and (max-width: 635px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1117,7 +1866,8 @@ table {
 	    margin-top: -230px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 545px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1126,7 +1876,8 @@ table {
 	    margin-top: -132px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 535px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1135,7 +1886,8 @@ table {
 	    margin-top: -132px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 450px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1144,52 +1896,185 @@ table {
 	    margin-top: -37px;
     }
 }
+*/
+/*
+@media screen and (max-width: 430px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 350px;
+	    margin-top: 36px;
+	    -webkit-margin-before: 34px;
+    }
+}
+*/
 
+@media screen and (max-width: 423px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 299px;
+	    margin-top: -66px;
+	    -webkit-margin-before: -70px;
+    }
+}
+
+@media screen and (max-width: 423px) and (max-height: 485px)  {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 178px;
+	    margin-top: 55px;
+	    -webkit-margin-before: 51px;
+    }
+}
+
+@media screen and (max-width: 423px) and (max-height: 375px)  {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 122px;
+	    margin-top: 111px;
+	    -webkit-margin-before: 107px;
+    }
+}
+
+@media screen and (max-width: 423px) and (max-height: 335px)  {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 122px;
+	    margin-top: 111px;
+	    -webkit-margin-before: 107px;
+    }
+}
+
+@media screen and (max-width: 423px) and (max-height: 325px)  {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 122px;
+	    margin-top: 111px;
+	    -webkit-margin-before: 107px;
+    }
+}
+
+@media screen and (max-width: 423px) and (max-height: 265px)  {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 95px;
+	    margin-top: 138px;
+	    -webkit-margin-before: 134px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 205px;
+	    margin-top: 28px;
+	    -webkit-margin-before: 24px;
+    }
+}
+
+@media screen and (max-width: 321px) and (max-height: 400px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 90px;
+	    margin-top: 143px;
+	    -webkit-margin-before: 139px;
+    }
+}
+
+@media screen and (max-width: 321px) and (max-height: 280px) and (orientation: landscape) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 90px;
+	    margin-top: 143px;
+	    -webkit-margin-before: 139px;
+    }
+}
+
+/*
 @media screen and (max-width: 420px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 450px;
-	    margin-top: -89px;
+	    height: 350px;
+	    margin-top: 91px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 415px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 435px;
-	    margin-top: -21px;
+	    height: 295px;
+	    margin-top: 145px;
+	    -webkit-margin-before: -74px;
     }
 }
+*/
+/*
+@media screen and (max-width: 540px) and (max-height: 825px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 427px;
+	    margin-top: -42px;
+    }
+}
+*/
+/*
+@media screen and (max-width: 535px) and (max-height: 725px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 427px;
+	    margin-top: -42px;
+    }
+}
+*/
 
+/*
 @media screen and (max-width: 415px) and (max-height: 850px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 435px;
-	    margin-top: -73px;
+	    margin-top: -21px;
+	    -webkit-margin-before: -74px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 415px) and (max-height: 750px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 435px;
-	    margin-top: -73px;
+	    margin-top: -21px;
+	    -webkit-margin-before: -74px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 400px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 450px;
 	    margin-top: -172px;
+	    -webkit-margin-before: -176px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 370px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1198,7 +2083,8 @@ table {
 	    margin-top: -106px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 350px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1207,25 +2093,71 @@ table {
 	    margin-top: 144px;
     }
 }
-
+*/
 @media screen and (max-width: 300px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 200px;
-	    margin-top: 0px;
+	    height: 140px;
+	    margin-top: 93px;
+	    -webkit-margin-before: 88px;
     }
 }
 
+@media screen and (max-width: 300px) and (max-height: 300px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 76px;
+	    margin-top: 157px;
+	    -webkit-margin-before: 152px;
+    }
+}
+
+/*
+@media screen and (max-width: 300px) and (max-height: 280px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 76px;
+	    margin-top: 107px;
+	    -webkit-margin-before: 104px;
+    }
+}
+*/
+/*
+@media screen and (max-height: 480px) {
+	#y-scroll { 
+	  overflow-y: scroll; 
+	  width: 100%;
+	  height: 140px;
+	  margin-top: 10px;
+	  -webkit-margin-before: 60px;
+  }
+}
+*/
+/*
+@media screen and (max-width: 340px) and (max-height: 780px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 399px;
+	    margin-top: 63px;
+	    -webkit-margin-before: -125px;
+    }
+}
+*/
+/*
 @media screen and (max-width: 900px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 170px;
-	    margin-top: -20px;
+	    margin-top: -70px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 870px) and (orientation: landscape) and (max-height: 309px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1234,16 +2166,19 @@ table {
 	    margin-top: -17px;
     }
 }
+*/
 
+/*
 @media screen and (max-width: 850px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 180px;
-	    margin-top: -30px;
+	    margin-top: -79px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 840px) and (orientation: landscape) and (max-height: 367px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1252,7 +2187,8 @@ table {
 	    margin-top: -68px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 820px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1261,7 +2197,8 @@ table {
 	    margin-top: -100px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 800px) and (orientation: landscape) and (max-height: 330px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1270,7 +2207,8 @@ table {
 	    margin-top: -68px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 750px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1279,17 +2217,19 @@ table {
 	    margin-top: -16px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 740px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 210px;
-	    margin-top: -115px;
+	    height: 160px;
+	    margin-top: -65px;
     }
 }
-
-@media screen and (max-width: 735px) and (orientation: landscape) {
+*/
+/*
+@media screen and (max-width: 735px) {
 	#y-scroll { 
 	  overflow-y: scroll; 
 	  width: 100%;
@@ -1297,25 +2237,28 @@ table {
 	  margin-top: 33px;
   }
 }
-
+*/
+/*
 @media screen and (max-width: 680px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
 	    height: 220px;
-	    margin-top: 12px;
+	    margin-top: 145px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 660px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 216px;
-	    margin-top: 16px;
+	    height: 244px;
+	    margin-top: 143px;
     }
 }
-
+*/
+/*
 @media screen and (max-width: 660px) and (orientation: landscape) and (max-height: 320px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
@@ -1324,22 +2267,278 @@ table {
 	    margin-top: 116px;
     }
 }
-
+*/
+/*
+@media screen and (max-width: 660px) and (orientation: landscape) and (max-height: 280px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 92px;
+	    margin-top: 156px;
+    }
+}
+*/
+/*
 @media screen and (max-width: 635px) and (orientation: landscape) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 150px;
-	    margin-top: 80px;
+	    height: 260px;
+	    margin-top: 127px;
     }
 }
-
-@media screen and (max-width: 340px) and (orientation: landscape){
+*/
+/*
+@media screen and (max-height: 440px) {
 	#y-scroll { 
 	    overflow-y: scroll; 
 	    width: 100%;
-	    height: 130px;
-	    margin-top: 60px;
+	    height: 100px;
+	    margin-top: 103px;
+    }
+}
+*/
+/*
+@media screen and (max-width: 296px) and (max-height: 295px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 100px;
+	    -webkit-margin-before: 100px;
+    }
+}
+*/
+@media screen and (max-width: 296px) and (max-height: 295px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 116px;
+	    margin-top: 117px;
+	    -webkit-margin-before: 113px;
+    }
+}
+
+@media screen and (max-width: 296px) and (max-height: 280px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 132px;
+	    -webkit-margin-before: 129px;
+    }
+}
+
+@media screen and (max-width: 296px) and (max-height: 270px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 133px;
+	    -webkit-margin-before: 129px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 103px;
+	    -webkit-margin-before: 100px;
+    }
+}
+
+@media screen and (max-width: 280px) and (max-height: 296px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 100px;
+	    -webkit-margin-before: 100px;
+    }
+}
+
+@media screen and (max-width: 280px) and (max-height: 280px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 103px;
+	    -webkit-margin-before: 100px;
+    }
+}
+
+@media screen and (max-width: 211px) {
+	#y-scroll { 
+	    overflow-y: scroll; 
+	    width: 100%;
+	    height: 100px;
+	    margin-top: 131px;
+	    -webkit-margin-before: 100px;
+    }
+}
+
+@media screen and (max-width: 650px) and (max-height: 335px) and (orientation: landscape) {
+	#crockpot {
+	    font-size: 0.8rem;
+	    & > img { 
+		    width: 60px; 
+	    }
+
+	    & > button { 
+	    	font-size: 1.1rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 10px 20px 10px 20px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+
+/*
+@media screen and (max-width: 750px) and (max-height: 335px) and (orientation: landscape) {
+	#crockpot {
+	    font-size: 0.6rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 5px 10px 5px 10px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+*/
+@media screen and (max-width: 450px) {
+#crockpot {
+	    font-size: 0.6rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 10px 20px 10px 20px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+
+@media screen and (max-width: 450px) and (max-height: 335px) and (orientation: landscape) {
+	#crockpot {
+	    font-size: 0.6rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 10px 20px 10px 20px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+
+/*
+@media screen and (max-width: 450px) and (max-height: 335px) and (orientation: landscape) {
+	#crockpot {
+	    font-size: 0.5rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 5px 10px 5px 10px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
+    }
+}
+*/
+@media screen and (max-width: 340px) and (max-height: 280px) and (orientation: landscape) {
+#crockpot {
+	    font-size: 0.6rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 10px 20px 10px 20px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 40px;
+    		height: 40px;
+    	}
+    }
+}
+
+@media screen and (max-width: 300px) and (max-height: 300px) and (orientation: landscape) {
+	#crockpot {
+	    font-size: 0.6rem;
+	    & > img { 
+		    width: 50px; 
+	    }
+
+	    & > button { 
+	    	font-size: 0.7rem;
+	    	text-align: center;
+	    	background-color: tan;
+	    	border: 1px solid black;
+	    	padding: 10px 20px 10px 20px;
+	    }
+    }
+    #container {
+    	& > div.food-container-tray {
+    		width: 50px;
+    		height: 50px;
+    	}
     }
 }
 

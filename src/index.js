@@ -663,7 +663,6 @@ function SelectFoodList(props) {
 	);
 	return (
 		<div>
-		    <h2>Select DLC</h2>
 			{buttons}
 	    </div>
 	);
@@ -725,13 +724,23 @@ class CrockpotRecipeTable extends React.Component {
 		const dlcButtons = ['../images/icons/dlc/Don\'t_Starve_Together_Logo.webp', '../images/icons/dlc/Shipwrecked_Logo.webp', '../images/icons/dlc/Hamlet_Logo.webp'];
 		return(
 			<div id="main">
-			    <h1>Won't Starve Crockpot Recipe App</h1>
+			    <div class={'white-background'}>
+			        <h1>Won't Starve Crockpot Recipe App</h1>
+			        <p>Welcome to the Won't Starve App! It's very easy to use.<br/>
+			           First, select 4 food items. Once you've done that, hit the cook button<br/>
+			           and see what you make. Click the <i>Clear</i> button to clear your selected food.<br/>
+			           Click the DLC buttons to experiment with food ingredients exlusive to the DLC's.<br/>
+			           <br/>
+			           Created by Zachary DJ Hernandez</p>
+			        <h2>Select DLC</h2>
+			    </div>
 			    <div>
 			        <SelectFoodList dlcButtons={dlcButtons}
 			                        onClick={this.handleDlcContent} 
 			                        addClass={this.state.addClass} 
 			                        index={this.state.index} />
 			    </div>
+			    
 			    <div id="food-table">
 			        <FoodList food={currentDlc} 
 			            onClick={(food) => this.selectedFood(food)} />
@@ -778,9 +787,13 @@ const crockpotMeals = [
 
     {id: 7, name: 'Monster Lasanga', hp: -20, sanity: -20, hunger: 37.5, priority: 10,
     monsterFoodValue: [2, 3, 4],  inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/Monster_Lasagna.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
-
+    /*
     {id: 8, name: 'Seafood Gumbo', hp: 40, sanity: 20, hunger: 37.5, priority: 10, 
     fishValue: [1.5, 2, 2.5, 3, 3.5, 4], inedibleNumMatch: [1, 2], icon: '../images/icons/crockpot_meals/Seafood_Gumbo.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
+    */
+
+    {id: 8, name: 'Seafood Gumbo', hp: 40, sanity: 20, hunger: 37.5, priority: 10,
+    ingrediantsNeeded: ['Eel'], altIngrediantsNeeded: ['Cooked Eel'], additionalFishValue: [1.5, 2, 2.5, 3, 3.5, 4], foodValueMatch: [1], ingredientNumMatch: [1, 2, 3, 4], inedibleNumMatch: [0, 1], icon: '../images/icons/crockpot_meals/Seafood_Gumbo.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
 
     {id: 9, name: 'Surf \'n\' Turf', hp: 60, sanity: 33, hunger: 35.7, priority: 30,
     fishValue: [1.5, 2, 2.5, 3], meatValue: [2.5, 3, 4], inedibleNumMatch: [1], excludedIngredients: ['Ice'], icon: '../images/icons/crockpot_meals/Surf_\'n\'_Turf.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
@@ -903,7 +916,7 @@ const crockpotMeals = [
      ingrediantsNeeded: ['Twigs'], additionalMeatValue: [0.5, 1, 1.5, 2, 2.5, 3], additionalMonsterFoodValue: [0, 1], ingredientNumMatch: [1], foodValueMatch: [2], inedibleNumMatch: [1], icon: '../images/icons/crockpot_meals/Kabobs.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
 
     {id: 48, name: 'Fishsticks', hp: 40, sanity: 5, hunger: 37.5, priority: 10,
-     ingrediantsNeeded: ['Twigs'],  additionalFishValue: [0.5, 1], foodValueMatch: [1], ingredientNumMatch: [1], inedibleNumMatch: [1], icon: '../images/icons/crockpot_meals/Fishsticks.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
+     ingrediantsNeeded: ['Twigs'],  additionalFishValue: [0.5, 1, 2, 2.5, 3, 3.5, 4], foodValueMatch: [1], ingredientNumMatch: [1], inedibleNumMatch: [1], icon: '../images/icons/crockpot_meals/Fishsticks.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
 
     {id: 49, name: 'Flower Salad', hp: 40, sanity: 5, hunger: 12.5, priority: 10,
      ingrediantsNeeded: ['Cactus Flower'], additionalVegetableValue: [1.5, 2, 2.5, 3, 3.5, 4], additionalMeatValue: [0], additionalSweetenerValue: [0], additionalFruitValue: [0], additionalEggValue: [0], ingredientNumMatch: [1, 2, 3, 4], foodValueMatch: [5], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/Flower_Salad.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
@@ -933,6 +946,19 @@ const crockpotMeals = [
     {id: 57, name: 'Soothing Tea', hp: 3, sanity: '15 + 30 over 1 min', hunger: 0, priority: 1,
     additionalMeatValue: [0], additionalVegetableValue: [0], additionalFishValue: [0], additionalEggValue: [0], additionalDairyValue: [0], additionalMonsterFoodValue: [0], inedibleNumMatch: [0],
     additionalSweetenerValue: [1, 2], foodValueMatch: [7], ingrediantsNeeded: ['Forget-Me-Lots'], ingredientNumMatch: [1, 2], icon: '../images/icons/crockpot_meals/Soothing_Tea.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
+
+    {id: 58, name: 'Figatoni', hp: 30, sanity: 15, hunger: 56.25, priority: 30,
+    ingrediantsNeeded: ['Fig'], altIngrediantsNeeded: ['Cooked Fig'], additionalMeatValue: [0], additionalVegetableValue: [2, 3], foodValueMatch: [2], ingredientNumMatch: [1, 2], inedibleNumMatch: [0, 1], icon: '../images/icons/crockpot_meals/Figatoni.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
+
+    {id: 59, name: 'Figgy Frogwich', hp: 8, sanity: 10, hunger: 18.75, priority: 1,
+    ingrediantsNeeded: ['Fig', 'Frog Legs'], altIngrediantsNeeded: ['Cooked Fig', 'Frog Legs'], altIngredientsNeededTwo: ['Fig', 'Cooked Frog Legs'], altIngredientsNeededThree: ['Cooked Fig', 'Cooked Frog Legs'], foodValueMatch: [0], ingredientNumMatch: [2, 3, 4], inedibleNumMatch: [0, 1, 2], icon: '../images/icons/crockpot_meals/Figgy_Frogwich.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'}, 
+
+    {id: 60, name: 'Figkabab', hp: 20, sanity: 15, hunger: 25, priority: 30, 
+    ingrediantsNeeded: ['Fig', 'Twigs'], altIngrediantsNeeded: ['Cooked Fig', 'Twigs'], additionalMeatValue: [1, 2], foodValueMatch: [1], ingredientNumMatch: [2, 3], inedibleNumMatch: [1, 2], icon: '../images/icons/crockpot_meals/Figkabab.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
+
+    {id: 61, name: 'Fig-Stuffed Trunk', hp: 60, sanity: 0, hunger: 56.25, priority: 40,
+    ingrediantsNeeded: ['Koalefant Trunk', 'Fig'], altIngrediantsNeeded: ['Koalefant Trunk Steak', 'Fig'], altIngredientsNeededTwo: ['Koalefant Trunk', 'Cooked Fig'], altIngredientsNeededThree: ['Koalefant Trunk Steak', 'Cooked Fig'],
+    altIngredientsNeededFour: ['Winter Koalefant Trunk', 'Fig'], altIngredientsNeededFive: ['Winter Koalefant Trunk', 'Cooked Fig'], foodValueMatch: [0], ingredientNumMatch: [2, 3, 4], inedibleNumMatch: [0, 1, 2], icon: '../images/icons/crockpot_meals/Fig-Stuffed_Trunk.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
 
     {id: 58, name: 'Asparagazpacho', hp: 3, sanity: 10, hunger: 25, priority: 30,
     ingrediantsNeeded: ['Asparagus', 'Ice'], altIngrediantsNeeded: ['Cooked Asparagus', 'Ice'], altIngredientsNeededTwo: ['Asparagus', 'Cooked Asparagus', 'Ice'], foodValueMatch: [0], ingredientNumMatch: [4], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Asparagazpacho.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
@@ -1268,6 +1294,12 @@ const reignOfGiantsFood = [
 
     {id: 19, name: 'Charred Nostrils', hp: 8, sanity: 0, hunger: 18.5, meatValue: 0.5, icon: '../images/icons/meats/Charred_Nostrils.webp'},
 
+    {id: 20, name: 'Koalefant Trunk', hp: 30, sanity: 0, hunger: 37.5, meatValue: 1, icon: '../images/icons/meats/Koalefant_Trunk.webp'},
+
+    {id: 21, name: 'Winter Koalefant Trunk', hp: 30, sanity: 0, hunger: 37.5, meatValue: 1, icon: '../images/icons/meats/Winter_Koalefant_Trunk.webp'},
+
+    {id: 22, name: 'Koalefant Trunk Steak', hp: 40, sanity: 0, hunger: 75, meatValue: 1, icon: '../images/icons/meats/Koalefant_Trunk_Steak.webp'},
+
     {id: 20, name: 'Freshwater Fish', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Freshwater_Fish.webp'},
 
     {id: 21, name: 'Fish Morsel', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Fish_Morsel.webp'},
@@ -1292,7 +1324,7 @@ const reignOfGiantsFood = [
 
     {id: 31, name: 'Bloomfin Tuna', hp: 0, sanity: -10, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Bloomfin_Tuna.webp', width: '75px', id: 'bloomfin'},
 
-    {id: 32, name: 'Scorching Sunfish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Scorching_Sunfish.webp', width: '63px'},
+    {id: 32, name: 'Scorching Sunfish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Scorching_Sunfish.webp', width: '63px', id: 'scorching-sun'},
 
     {id: 33, name: 'Spittlefish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Spittlefish.webp', width: '75px', id: 'spittle'},
 
@@ -1361,6 +1393,10 @@ const reignOfGiantsFood = [
     {id: 65, name: 'Glow Berry', hp: 11, sanity: -10, hunger: 25, fruitValue: 1, icon: '../images/icons/fruits/Glow_Berry.webp'},
 
     {id: 66, name: 'Lesser Glow Berry', hp: 3, sanity: -10, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Lesser_Glow_Berry.webp'},
+
+    {id: 67, name: 'Fig', hp: 0, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Fig.webp'},
+
+    {id: 68, name: 'Cooked Fig', hp: 1, sanity: 0, hunger: 18.75, fruitValue: 0.5, icon: '../images/icons/fruits/Cooked_Fig.webp'},
 
     {id: 67, name: 'Honey', hp: 3, sanity: 0, hunger: 9.375, sweetenerValue: 1, icon: '../images/icons/sweeteners/Honey.webp'},
 
