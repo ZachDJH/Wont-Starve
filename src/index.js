@@ -960,38 +960,38 @@ const crockpotMeals = [
     ingrediantsNeeded: ['Koalefant Trunk', 'Fig'], altIngrediantsNeeded: ['Koalefant Trunk Steak', 'Fig'], altIngredientsNeededTwo: ['Koalefant Trunk', 'Cooked Fig'], altIngredientsNeededThree: ['Koalefant Trunk Steak', 'Cooked Fig'],
     altIngredientsNeededFour: ['Winter Koalefant Trunk', 'Fig'], altIngredientsNeededFive: ['Winter Koalefant Trunk', 'Cooked Fig'], foodValueMatch: [0], ingredientNumMatch: [2, 3, 4], inedibleNumMatch: [0, 1, 2], icon: '../images/icons/crockpot_meals/Fig-Stuffed_Trunk.webp', crockpot: '../images/icons/misc/Crock_Pot.webp'},
 
-    {id: 58, name: 'Asparagazpacho', hp: 3, sanity: 10, hunger: 25, priority: 30,
+    {id: 62, name: 'Asparagazpacho', hp: 3, sanity: 10, hunger: 25, priority: 30,
     ingrediantsNeeded: ['Asparagus', 'Ice'], altIngrediantsNeeded: ['Cooked Asparagus', 'Ice'], altIngredientsNeededTwo: ['Asparagus', 'Cooked Asparagus', 'Ice'], foodValueMatch: [0], ingredientNumMatch: [4], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Asparagazpacho.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 59, name: 'Bone Bouillon', hp: 32, sanity: 5, hunger: 150, priority: 30,
+    {id: 63, name: 'Bone Bouillon', hp: 32, sanity: 5, hunger: 150, priority: 30,
     ingrediantsNeeded: ['Bone Shards', 'Onion'], altIngrediantsNeeded: ['Bone Shards', 'Roasted Onion'], foodValueMatch: [0], ingredientNumMatch: [3, 4], inedibleNumMatch: [2], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Bone_Bouillon.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 60, name: 'Fish Cordon Bleu', hp: 20, sanity: -10, hunger: 37.5, priority: 30,
+    {id: 64, name: 'Fish Cordon Bleu', hp: 20, sanity: -10, hunger: 37.5, priority: 30,
     ingrediantsNeeded: ['Frog Legs'], altIngrediantsNeeded: ['Cooked Frog Legs'], altIngredientsNeededTwo: ['Frog Legs', 'Cooked Frog Legs'], additionalFishValue: [1, 1.5, 2], foodValueMatch: [1], inedibleNumMatch: [0], ingredientNumMatch: [2], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Fish_Cordon_Bleu.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 61, name: 'Fresh Fruit Crepes', hp: 60, sanity: 15, hunger: 150, priority: 30,
+    {id: 65, name: 'Fresh Fruit Crepes', hp: 60, sanity: 15, hunger: 150, priority: 30,
     additionalFruitValue: [1.5, 2], additionalSweetenerValue: [1], ingrediantsNeeded: ['Butter'], ingredientNumMatch: [1], foodValueMatch: [2], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Fresh_Fruit_Crepes.webp'},
 
-    {id: 62, name: 'Glow Berry Mousse', hp: 3, sanity: 10, hunger: 37.5, priority: 30,
+    {id: 66, name: 'Glow Berry Mousse', hp: 3, sanity: 10, hunger: 37.5, priority: 30,
     additionalFruitValue: [2, 2.5, 3, 3.5, 4], additionalMeatValue: [0], ingrediantsNeeded: ['Glow Berry'], altIngrediantsNeeded: ['Lesser Glow Berry', 'Lesser Glow Berry'], altIngredientsNeededTwo: ['Glow Berry', 'Lesser Glow Berry'], foodValueMatch: [2], ingredientNumMatch: [1, 2, 3, 4], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Glow_Berry_Mousse.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 63, name: 'Grim Galette', hp: 1, sanity: 5, hunger: 25, priority: 30,
+    {id: 67, name: 'Grim Galette', hp: 1, sanity: 5, hunger: 25, priority: 30,
     ingrediantsNeeded: ['Nightmare Fuel', 'Potato', 'Onion'], altIngrediantsNeeded: ['Nightmare Fuel', 'Roasted Potato', 'Onion'], altIngredientsNeededTwo: ['Nightmare Fuel', 'Roasted Potato', 'Roasted Onion'], altIngredientsNeededThree: ['Nightmare Fuel', 'Potato', 'Roasted Onion'], foodValueMatch: [0], ingredientNumMatch: [4], inedibleNumMatch: [2], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Grim_Galette.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 64, name: 'Hot Dragon Chili Salad', hp: -3, sanity: 10, hunger: 25, priority: 30,
+    {id: 68, name: 'Hot Dragon Chili Salad', hp: -3, sanity: 10, hunger: 25, priority: 30,
     additionalMeatValue: [0], additionalEggValue: [0], ingrediantsNeeded: ['Dragon Fruit', 'Pepper'], altIngrediantsNeeded: ['Prepared Dragon Fruit', 'Roasted Pepper'], altIngredientsNeededTwo: ['Dragon Fruit', 'Roasted Pepper'], altIngredientsNeededThree: ['Prepared Dragon Fruit', 'Pepper'], foodValueMatch: [2], ingredientNumMatch: [2, 3, 4], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Hot_Dragon_Chili_Salad.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 65, name: 'Monster Tartare', hp: -20, sanity: -20, hunger: 62.5, priority: 10, //Priority is actually 30, but I made it 10 so that monster lasanga is not excluded
+    {id: 69, name: 'Monster Tartare', hp: -20, sanity: -20, hunger: 62.5, priority: 10, //Priority is actually 30, but I made it 10 so that monster lasanga is not excluded
     monsterFoodValue: [2, 3, 4], foodValueMatch: [1], ingredientNumMatch: [0], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Monster_Tartare.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 66, name: 'Moqueca', hp: 60, sanity: 33, hunger: 112.5, priority: 30,
+    {id: 70, name: 'Moqueca', hp: 60, sanity: 33, hunger: 112.5, priority: 30,
     additionalFishValue: [0.5, 1, 1.5, 2], ingrediantsNeeded: ['Onion', 'Toma Root'], altIngrediantsNeeded: ['Roasted Onion', 'Roasted Toma Root'], altIngredientsNeededTwo: ['Roasted Onion', 'Toma Root'], altIngredientsNeededThree: ['Onion', 'Roasted Toma Root'],
     foodValueMatch: [1], ingredientNumMatch: [2, 3], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Moqueca.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 67, name: 'Puffed Potato Soufflé', hp: 20, sanity: 15, hunger: 37.5, priority: 30,
+    {id: 71, name: 'Puffed Potato Soufflé', hp: 20, sanity: 15, hunger: 37.5, priority: 30,
     ingrediantsNeeded: ['Potato'], altIngrediantsNeeded: ['Roasted Potato'], altIngredientsNeededTwo: ['Potato', 'Roasted Potato'], additionalMeatValue: [0], additionalEggValue: [1, 2, 4, 6, 8], ingredientNumMatch: [2], foodValueMatch: [2], inedibleNumMatch: [0], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Puffed_Potato_Soufflé.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'},
 
-    {id: 68, name: 'Volt Goat Chaud-Froid', hp: 3, sanity: 10, hunger: 37.5, priority: 30,
+    {id: 72, name: 'Volt Goat Chaud-Froid', hp: 3, sanity: 10, hunger: 37.5, priority: 30,
     ingrediantsNeeded: ['Volt Goat Horn'], additionalSweetenerValue: [2, 3, 5, 6, 7, 9], additionalMeatValue: [0], ingredientNumMatch: [1, 2], foodValueMatch: [2], inedibleNumMatch: [1, 2], icon: '../images/icons/crockpot_meals/portable_crockpot_meals/Volt_Goat_Chaud-Froid.webp', crockpot: '../images/icons/misc/Portable_Crock_Pot.webp'}       
 
 ];
@@ -1300,213 +1300,213 @@ const reignOfGiantsFood = [
 
     {id: 22, name: 'Koalefant Trunk Steak', hp: 40, sanity: 0, hunger: 75, meatValue: 1, icon: '../images/icons/meats/Koalefant_Trunk_Steak.webp'},
 
-    {id: 20, name: 'Freshwater Fish', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Freshwater_Fish.webp'},
+    {id: 23, name: 'Freshwater Fish', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Freshwater_Fish.webp'},
 
-    {id: 21, name: 'Fish Morsel', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Fish_Morsel.webp'},
+    {id: 24, name: 'Fish Morsel', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Fish_Morsel.webp'},
 
-    {id: 22, name: 'Cooked Fish Morsel', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Cooked_Fish_Morsel.webp'},
+    {id: 25, name: 'Cooked Fish Morsel', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Cooked_Fish_Morsel.webp'},
 
-    {id: 23, name: 'Raw Fish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Raw_Fish.webp'},
+    {id: 26, name: 'Raw Fish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Raw_Fish.webp'},
 
-    {id: 24, name: 'Fish Steak', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Fish_Steak.webp'},
+    {id: 27, name: 'Fish Steak', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Fish_Steak.webp'},
 
-    {id: 25, name: 'Runty Guppy', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Runty_Guppy.webp', width: '70px', id: 'runty-gup'},
+    {id: 28, name: 'Runty Guppy', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Runty_Guppy.webp', width: '70px', id: 'runty-gup'},
 
-    {id: 26, name: 'Needlenosed Squirt', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Needlenosed_Squirt.webp', width: '70px', id: 'needle-squirt'},
+    {id: 29, name: 'Needlenosed Squirt', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Needlenosed_Squirt.webp', width: '70px', id: 'needle-squirt'},
 
-    {id: 27, name: 'Bitty Baitfish', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Bitty_Baitfish.webp', width: '75px', id: 'bitty-bait'},
+    {id: 30, name: 'Bitty Baitfish', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Bitty_Baitfish.webp', width: '75px', id: 'bitty-bait'},
 
-    {id: 28, name: 'Smolt Fry', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Smolt_Fry.webp', width: '70px', id: 'smolt'},
+    {id: 31, name: 'Smolt Fry', hp: 1, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Smolt_Fry.webp', width: '70px', id: 'smolt'},
 
-    {id: 29, name: 'Popperfish', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/meats/fishes/Popperfish.webp', width: '90px', id: 'popper'},
+    {id: 32, name: 'Popperfish', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/meats/fishes/Popperfish.webp', width: '90px', id: 'popper'},
 
-    {id: 30, name: 'Fallounder', hp: 0, sanity: -10, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Fallounder.webp', width: '80px', id: 'fall'},
+    {id: 33, name: 'Fallounder', hp: 0, sanity: -10, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Fallounder.webp', width: '80px', id: 'fall'},
 
-    {id: 31, name: 'Bloomfin Tuna', hp: 0, sanity: -10, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Bloomfin_Tuna.webp', width: '75px', id: 'bloomfin'},
+    {id: 34, name: 'Bloomfin Tuna', hp: 0, sanity: -10, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Bloomfin_Tuna.webp', width: '75px', id: 'bloomfin'},
 
-    {id: 32, name: 'Scorching Sunfish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Scorching_Sunfish.webp', width: '63px', id: 'scorching-sun'},
+    {id: 35, name: 'Scorching Sunfish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Scorching_Sunfish.webp', width: '63px', id: 'scorching-sun'},
 
-    {id: 33, name: 'Spittlefish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Spittlefish.webp', width: '75px', id: 'spittle'},
+    {id: 36, name: 'Spittlefish', hp: 0, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/fishes/Spittlefish.webp', width: '75px', id: 'spittle'},
 
-    {id: 34, name: 'Mudfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Mudfish.webp', width: '80px', id: 'mud'},
+    {id: 37, name: 'Mudfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Mudfish.webp', width: '80px', id: 'mud'},
 
-    {id: 35, name: 'Deep Bass', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Deep_Bass.webp', width: '68px', id: 'deep'},
+    {id: 38, name: 'Deep Bass', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Deep_Bass.webp', width: '68px', id: 'deep'},
 
-    {id: 36, name: 'Dandy Lionfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Dandy_Lionfish.webp', width: '75px', id: 'dandy'},
+    {id: 39, name: 'Dandy Lionfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Dandy_Lionfish.webp', width: '75px', id: 'dandy'},
 
-    {id: 37, name: 'Black Catfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Black_Catfish.webp', width: '70px', id: 'black-cat'},
+    {id: 40, name: 'Black Catfish', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Black_Catfish.webp', width: '70px', id: 'black-cat'},
 
-    {id: 38, name: 'Corn Cod', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/meats/fishes/Corn_Cod.webp', width: '80px', id: 'corn-cod'},
+    {id: 41, name: 'Corn Cod', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/meats/fishes/Corn_Cod.webp', width: '80px', id: 'corn-cod'},
 
-    {id: 39, name: 'Dappled Koi', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Dappled_Koi.webp', width: '75px', id: 'dappled-koi'},
+    {id: 42, name: 'Dappled Koi', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Dappled_Koi.webp', width: '75px', id: 'dappled-koi'},
 
-    {id: 40, name: 'Golden Koi', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Golden_Koi.webp', width: '80px', id: 'golden-koi'},
+    {id: 43, name: 'Golden Koi', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Golden_Koi.webp', width: '80px', id: 'golden-koi'},
 
-    {id: 41, name: 'Ice Bream', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Ice_Bream.webp', width: '70px', id: 'ice-bream'},
+    {id: 44, name: 'Ice Bream', hp: 8, sanity: 0, hunger: 25, meatValue: 1, fishValue: 1, icon: '../images/icons/meats/fishes/Ice_Bream.webp', width: '70px', id: 'ice-bream'},
 
-    {id: 42, name: 'Eel', hp: 3, sanity: 0, hunger: 9.375, meatValue: 0.5, fishValue: 1, icon: '../images/icons/meats/Eel.webp'},
+    {id: 45, name: 'Eel', hp: 3, sanity: 0, hunger: 9.375, meatValue: 0.5, fishValue: 1, icon: '../images/icons/meats/Eel.webp'},
 
-    {id: 43, name: 'Cooked Eel', hp: 8, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 1, icon: '../images/icons/meats/Cooked_Eel.webp'},
+    {id: 46, name: 'Cooked Eel', hp: 8, sanity: 0, hunger: 12.5, meatValue: 0.5, fishValue: 1, icon: '../images/icons/meats/Cooked_Eel.webp'},
 
-    {id: 44, name: 'Barnacles', hp: 0, sanity: -5, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Barnacles.webp'},
+    {id: 47, name: 'Barnacles', hp: 0, sanity: -5, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Barnacles.webp'},
 
-    {id: 45, name: 'Cooked Barnacles', hp: 1, sanity: -1, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Cooked_Barnacles.webp'},
+    {id: 48, name: 'Cooked Barnacles', hp: 1, sanity: -1, hunger: 12.5, meatValue: 0.5, fishValue: 0.5, icon: '../images/icons/meats/Cooked_Barnacles.webp'},
 
-    {id: 46, name: 'Wobster', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Wobster_(DST).webp'},
+    {id: 49, name: 'Wobster', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', meatValue: 1, fishValue: 1, icon: '../images/icons/meats/Wobster_(DST).webp'},
 
-    {id: 47, name: 'Egg', hp: 0, sanity: 0, hunger: 9.375, eggValue: 1, icon: '../images/icons/eggs/Egg.webp'},
+    {id: 50, name: 'Egg', hp: 0, sanity: 0, hunger: 9.375, eggValue: 1, icon: '../images/icons/eggs/Egg.webp'},
 
-    {id: 48, name: 'Cooked Egg', hp: 0, sanity: 0, hunger: 12.5, eggValue: 1, icon: '../images/icons/eggs/Cooked_Egg.webp'},
+    {id: 51, name: 'Cooked Egg', hp: 0, sanity: 0, hunger: 12.5, eggValue: 1, icon: '../images/icons/eggs/Cooked_Egg.webp'},
 
-    {id: 49, name: 'Tallbird Egg', hp: 3, sanity: 0, hunger: 20, eggValue: 4, icon: '../images/icons/eggs/Tallbird_Egg.webp'},
+    {id: 52, name: 'Tallbird Egg', hp: 3, sanity: 0, hunger: 20, eggValue: 4, icon: '../images/icons/eggs/Tallbird_Egg.webp'},
 
-    {id: 50, name: 'Cooked Tallbird Egg', hp: 0, sanity: 0, hunger: 35.7, eggValue: 4, icon: '../images/icons/eggs/Fried_Tallbird_Egg.webp'},
+    {id: 53, name: 'Cooked Tallbird Egg', hp: 0, sanity: 0, hunger: 35.7, eggValue: 4, icon: '../images/icons/eggs/Fried_Tallbird_Egg.webp'},
 
-    {id: 51, name: 'Berries', hp: 0, sanity: 0, hunger: 9.375, fruitValue: 0.5, icon: '../images/icons/fruits/Berries.webp'},
+    {id: 54, name: 'Berries', hp: 0, sanity: 0, hunger: 9.375, fruitValue: 0.5, icon: '../images/icons/fruits/Berries.webp'},
 
-    {id: 52, name: 'Roasted Berries', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Roasted_Berries.webp'},
+    {id: 55, name: 'Roasted Berries', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Roasted_Berries.webp'},
 
-    {id: 53, name: 'Juicy Berries', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Juicy_Berries.webp'},
+    {id: 56, name: 'Juicy Berries', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Juicy_Berries.webp'},
 
-    {id: 54, name: 'Roasted Juicy Berries', hp: 3, sanity: 0, hunger: 18.75, fruitValue: 0.5, icon: '../images/icons/fruits/Roasted_Juicy_Berries.webp'},
+    {id: 57, name: 'Roasted Juicy Berries', hp: 3, sanity: 0, hunger: 18.75, fruitValue: 0.5, icon: '../images/icons/fruits/Roasted_Juicy_Berries.webp'},
 
-    {id: 55, name: 'Dragon Fruit', hp: 3, sanity: 0, hunger: 9.375, fruitValue: 1, icon: '../images/icons/fruits/Dragon_Fruit.webp'},
+    {id: 58, name: 'Dragon Fruit', hp: 3, sanity: 0, hunger: 9.375, fruitValue: 1, icon: '../images/icons/fruits/Dragon_Fruit.webp'},
 
-    {id: 56, name: 'Prepared Dragon Fruit', hp: 20, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Prepared_Dragon_Fruit.webp'},
+    {id: 59, name: 'Prepared Dragon Fruit', hp: 20, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Prepared_Dragon_Fruit.webp'},
 
-    {id: 57, name: 'Durian', hp: -3, sanity: -5, hunger: 25, fruitValue: 1, monsterFoodValue: 1, icon: '../images/icons/fruits/Durian.webp'},
+    {id: 60, name: 'Durian', hp: -3, sanity: -5, hunger: 25, fruitValue: 1, monsterFoodValue: 1, icon: '../images/icons/fruits/Durian.webp'},
 
-    {id: 58, name: 'Extra Smelly Durian', hp: 0, sanity: -5, hunger: 25, fruitValue: 1, monsterFoodValue: 1, icon: '../images/icons/fruits/Extra_Smelly_Durian.webp'},
+    {id: 61, name: 'Extra Smelly Durian', hp: 0, sanity: -5, hunger: 25, fruitValue: 1, monsterFoodValue: 1, icon: '../images/icons/fruits/Extra_Smelly_Durian.webp'},
 
-    {id: 59, name: 'Pomegranate', hp: 3, sanity: 0, hunger: 9.375, fruitValue: 1, icon: '../images/icons/fruits/Pomegranate.webp'},
+    {id: 62, name: 'Pomegranate', hp: 3, sanity: 0, hunger: 9.375, fruitValue: 1, icon: '../images/icons/fruits/Pomegranate.webp'},
 
-    {id: 60, name: 'Sliced Pomegranate', hp: 20, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Sliced_Pomegranate.webp'},
+    {id: 63, name: 'Sliced Pomegranate', hp: 20, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Sliced_Pomegranate.webp'},
 
-    {id: 61, name: 'Watermelon', hp: 3, sanity: 5, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Watermelon.webp'},
+    {id: 64, name: 'Watermelon', hp: 3, sanity: 5, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Watermelon.webp'},
 
-    {id: 62, name: 'Grilled Watermelon', hp: 1, sanity: 7.5, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Grilled_Watermelon.webp'},
+    {id: 65, name: 'Grilled Watermelon', hp: 1, sanity: 7.5, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Grilled_Watermelon.webp'},
 
-    {id: 63, name: 'Cave Banana', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Cave_Banana.webp'},
+    {id: 66, name: 'Cave Banana', hp: 1, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Cave_Banana.webp'},
 
-    {id: 64, name: 'Cooked Cave Banana', hp: 3, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Cooked_Cave_Banana.webp'},
+    {id: 67, name: 'Cooked Cave Banana', hp: 3, sanity: 0, hunger: 12.5, fruitValue: 1, icon: '../images/icons/fruits/Cooked_Cave_Banana.webp'},
 
-    {id: 65, name: 'Glow Berry', hp: 11, sanity: -10, hunger: 25, fruitValue: 1, icon: '../images/icons/fruits/Glow_Berry.webp'},
+    {id: 68, name: 'Glow Berry', hp: 11, sanity: -10, hunger: 25, fruitValue: 1, icon: '../images/icons/fruits/Glow_Berry.webp'},
 
-    {id: 66, name: 'Lesser Glow Berry', hp: 3, sanity: -10, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Lesser_Glow_Berry.webp'},
+    {id: 69, name: 'Lesser Glow Berry', hp: 3, sanity: -10, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Lesser_Glow_Berry.webp'},
 
-    {id: 67, name: 'Fig', hp: 0, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Fig.webp'},
+    {id: 70, name: 'Fig', hp: 0, sanity: 0, hunger: 12.5, fruitValue: 0.5, icon: '../images/icons/fruits/Fig.webp'},
 
-    {id: 68, name: 'Cooked Fig', hp: 1, sanity: 0, hunger: 18.75, fruitValue: 0.5, icon: '../images/icons/fruits/Cooked_Fig.webp'},
+    {id: 71, name: 'Cooked Fig', hp: 1, sanity: 0, hunger: 18.75, fruitValue: 0.5, icon: '../images/icons/fruits/Cooked_Fig.webp'},
 
-    {id: 67, name: 'Honey', hp: 3, sanity: 0, hunger: 9.375, sweetenerValue: 1, icon: '../images/icons/sweeteners/Honey.webp'},
+    {id: 72, name: 'Honey', hp: 3, sanity: 0, hunger: 9.375, sweetenerValue: 1, icon: '../images/icons/sweeteners/Honey.webp'},
 
-    {id: 68, name: 'Honeycomb', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', sweetenerValue: 1, icon: '../images/icons/sweeteners/Honeycomb.webp'},
+    {id: 73, name: 'Honeycomb', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', sweetenerValue: 1, icon: '../images/icons/sweeteners/Honeycomb.webp'},
 
-    {id: 69, name: 'Royal Jelly', hp: 40, sanity: 15, hunger: 12.5, sweetenerValue: 3, icon: '../images/icons/sweeteners/Royal_Jelly.webp'},
+    {id: 74, name: 'Royal Jelly', hp: 40, sanity: 15, hunger: 12.5, sweetenerValue: 3, icon: '../images/icons/sweeteners/Royal_Jelly.webp'},
 
-    {id: 70, name: 'Carrot', hp: 1, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Carrot.webp'},
+    {id: 75, name: 'Carrot', hp: 1, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Carrot.webp'},
 
-    {id: 71, name: 'Roasted Carrot', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Roasted_Carrot.webp'},
+    {id: 76, name: 'Roasted Carrot', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Roasted_Carrot.webp'},
 
-    {id: 72, name: 'Asparagus', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Asparagus.webp'},
+    {id: 77, name: 'Asparagus', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Asparagus.webp'},
 
-    {id: 73, name: 'Cooked Asparagus', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Asparagus.webp'},
+    {id: 78, name: 'Cooked Asparagus', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Asparagus.webp'},
 
-    {id: 74, name: 'Corn', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Corn.webp'},
+    {id: 79, name: 'Corn', hp: 3, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Corn.webp'},
 
-    {id: 75, name: 'Popcorn', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Popcorn.webp'},
+    {id: 80, name: 'Popcorn', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Popcorn.webp'},
 
-    {id: 76, name: 'Eggplant', hp: 8, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Eggplant.webp'},
+    {id: 81, name: 'Eggplant', hp: 8, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Eggplant.webp'},
 
-    {id: 77, name: 'Braised Eggplant', hp: 20, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Braised_Eggplant.webp'},
+    {id: 82, name: 'Braised Eggplant', hp: 20, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Braised_Eggplant.webp'},
 
-    {id: 78, name: 'Pumpkin', hp: 3, sanity: 0, hunger: 37.5, vegetableValue: 1, icon: '../images/icons/vegetables/Pumpkin.webp'},
+    {id: 83, name: 'Pumpkin', hp: 3, sanity: 0, hunger: 37.5, vegetableValue: 1, icon: '../images/icons/vegetables/Pumpkin.webp'},
 
-    {id: 79, name: 'Hot Pumpkin', hp: 8, sanity: 0, hunger: 37.5, vegetableValue: 1, icon: '../images/icons/vegetables/Hot_Pumpkin.webp'},
+    {id: 84, name: 'Hot Pumpkin', hp: 8, sanity: 0, hunger: 37.5, vegetableValue: 1, icon: '../images/icons/vegetables/Hot_Pumpkin.webp'},
 
-    {id: 80, name: 'Cactus Flesh', hp: -3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cactus_Flesh.webp'},
+    {id: 85, name: 'Cactus Flesh', hp: -3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cactus_Flesh.webp'},
 
-    {id: 81, name: 'Cooked Cactus Flesh', hp: 1, sanity: 15, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Cactus_Flesh.webp'},
+    {id: 86, name: 'Cooked Cactus Flesh', hp: 1, sanity: 15, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Cactus_Flesh.webp'},
 
-    {id: 82, name: 'Cactus Flower', hp: 8, sanity: 5, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cactus_Flower.webp'},
+    {id: 87, name: 'Cactus Flower', hp: 8, sanity: 5, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cactus_Flower.webp'},
 
-    {id: 83, name: 'Lichen', hp: 3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Lichen.webp'},
+    {id: 88, name: 'Lichen', hp: 3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Lichen.webp'},
 
-    {id: 84, name: 'Kelp Fronds', hp: -1, sanity: -10, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Kelp_Fronds.webp'},
+    {id: 89, name: 'Kelp Fronds', hp: -1, sanity: -10, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Kelp_Fronds.webp'},
 
-    {id: 85, name: 'Cooked Kelp Fronds', hp: 0, sanity: -5, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Kelp_Fronds.webp'},
+    {id: 90, name: 'Cooked Kelp Fronds', hp: 0, sanity: -5, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Kelp_Fronds.webp'},
 
-    {id: 86, name: 'Dried Kelp Fronds', hp: 1, sanity: 10, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Dried_Kelp_Fronds.webp'},
+    {id: 91, name: 'Dried Kelp Fronds', hp: 1, sanity: 10, hunger: 9.375, vegetableValue: 0.5, icon: '../images/icons/vegetables/Dried_Kelp_Fronds.webp'},
 
-    {id: 87, name: 'Ripe Stone Fruit', hp: 1, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Ripe_Stone_Fruit.webp'},
+    {id: 92, name: 'Ripe Stone Fruit', hp: 1, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Ripe_Stone_Fruit.webp'},
 
-    {id: 88, name: 'Cooked Stone Fruit', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Stone_Fruit.webp'},
+    {id: 93, name: 'Cooked Stone Fruit', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Stone_Fruit.webp'},
 
-    {id: 89, name: 'Garlic', hp: 0, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Garlic.webp'},
+    {id: 94, name: 'Garlic', hp: 0, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Garlic.webp'},
 
-    {id: 90, name: 'Roasted Garlic', hp: 1, sanity: -5, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Garlic.webp'},
+    {id: 95, name: 'Roasted Garlic', hp: 1, sanity: -5, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Garlic.webp'},
 
-    {id: 91, name: 'Onion', hp: 0, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Onion.webp'},
+    {id: 96, name: 'Onion', hp: 0, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Onion.webp'},
 
-    {id: 92, name: 'Roasted Onion', hp: 1, sanity: -5, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Onion.webp'},
+    {id: 97, name: 'Roasted Onion', hp: 1, sanity: -5, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Onion.webp'},
 
-    {id: 93, name: 'Pepper', hp: -20, sanity: -15, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Pepper.webp'},
+    {id: 98, name: 'Pepper', hp: -20, sanity: -15, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Pepper.webp'},
 
-    {id: 94, name: 'Roasted Pepper', hp: -3, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roasted_Pepper.webp'},
+    {id: 99, name: 'Roasted Pepper', hp: -3, sanity: -10, hunger: 9.375, vegetableValue: 1, icon: '../images/icons/vegetables/Roasted_Pepper.webp'},
 
-    {id: 95, name: 'Potato', hp: -3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Potato.webp'},
+    {id: 100, name: 'Potato', hp: -3, sanity: -5, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Potato.webp'},
 
-    {id: 96, name: 'Roasted Potato', hp: 20, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Potato.webp'},
+    {id: 101, name: 'Roasted Potato', hp: 20, sanity: 0, hunger: 25, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Potato.webp'},
 
-    {id: 97, name: 'Toma Root', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Toma_Root.webp'},
+    {id: 102, name: 'Toma Root', hp: 3, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Toma_Root.webp'},
 
-    {id: 98, name: 'Roasted Toma Root', hp: 20, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Toma_Root.webp'},
+    {id: 103, name: 'Roasted Toma Root', hp: 20, sanity: 0, hunger: 12.5, vegetableValue: 1, icon: '../images/icons/vegetables/Roast_Toma_Root.webp'},
 
-    {id: 99, name: 'Mandrake', hp: 60, sanity: 0, hunger: 75, vegetableValue: 1, icon: '../images/icons/vegetables/Mandrake.webp'},
+    {id: 104, name: 'Mandrake', hp: 60, sanity: 0, hunger: 75, vegetableValue: 1, icon: '../images/icons/vegetables/Mandrake.webp'},
 
-    {id: 100, name: 'Cooked Mandrake', hp: 100, sanity: 0, hunger: 150, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Mandrake.webp'},
+    {id: 105, name: 'Cooked Mandrake', hp: 100, sanity: 0, hunger: 150, vegetableValue: 1, icon: '../images/icons/vegetables/Cooked_Mandrake.webp'},
 
-    {id: 101, name: 'Blue Cap', hp: 20, sanity: -15, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Blue_Cap.webp'},
+    {id: 106, name: 'Blue Cap', hp: 20, sanity: -15, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Blue_Cap.webp'},
 
-    {id: 102, name: 'Cooked Blue Cap', hp: -3, sanity: 10, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Blue_Cap.webp'},
+    {id: 107, name: 'Cooked Blue Cap', hp: -3, sanity: 10, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Blue_Cap.webp'},
 
-    {id: 103, name: 'Green Cap', hp: 0, sanity: -50, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Green_Cap.webp'},
+    {id: 108, name: 'Green Cap', hp: 0, sanity: -50, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Green_Cap.webp'},
 
-    {id: 104, name: 'Cooked Green Cap', hp: -1, sanity: 15, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Green_Cap.webp'},
+    {id: 109, name: 'Cooked Green Cap', hp: -1, sanity: 15, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Green_Cap.webp'},
 
-    {id: 105, name: 'Red Cap', hp: -20, sanity: 0, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Red_Cap.webp'},
+    {id: 110, name: 'Red Cap', hp: -20, sanity: 0, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Red_Cap.webp'},
 
-    {id: 106, name: 'Cooked Red Cap', hp: 1, sanity: -10, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Red_Cap.webp'},
+    {id: 111, name: 'Cooked Red Cap', hp: 1, sanity: -10, hunger: 0, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Red_Cap.webp'},
 
-    {id: 107, name: 'Moon Shroom', hp: 0, sanity: 10, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Moon_Shroom.webp'},
+    {id: 112, name: 'Moon Shroom', hp: 0, sanity: 10, hunger: 12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Moon_Shroom.webp'},
 
-    {id: 108, name: 'Cooked Moon Shroom', hp: 0, sanity: -10, hunger: -12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Moon_Shroom.webp'},
+    {id: 113, name: 'Cooked Moon Shroom', hp: 0, sanity: -10, hunger: -12.5, vegetableValue: 0.5, icon: '../images/icons/vegetables/Cooked_Moon_Shroom.webp'},
 
-    {id: 109, name: 'Forget-Me-Lots', hp: 0, sanity: 1, hunger: 0, vegetableValue: 0, icon: '../images/icons/vegetables/Forget-Me-Lots.webp'},
+    {id: 114, name: 'Forget-Me-Lots', hp: 0, sanity: 1, hunger: 0, vegetableValue: 0, icon: '../images/icons/vegetables/Forget-Me-Lots.webp'},
 
-    {id: 110, name: 'Butter', hp: 40, sanity: 0, hunger: 25, dairy: true, dairyValue: 1, icon: '../images/icons/dairy/Butter.webp'},
+    {id: 115, name: 'Butter', hp: 40, sanity: 0, hunger: 25, dairy: true, dairyValue: 1, icon: '../images/icons/dairy/Butter.webp'},
 
-    {id: 111, name: 'Electric Milk', hp: 3, sanity: 10, hunger: 12.5, dairy: true, dairyValue: 1, icon: '../images/icons/dairy/Electric_Milk.webp'},
+    {id: 116, name: 'Electric Milk', hp: 3, sanity: 10, hunger: 12.5, dairy: true, dairyValue: 1, icon: '../images/icons/dairy/Electric_Milk.webp'},
 
-    {id: 112, name: 'Butterfly Wings', hp: 8, sanity: 0, hunger: 9.375, icon: '../images/icons/other_edibles/Butterfly_Wings.webp'},
+    {id: 117, name: 'Butterfly Wings', hp: 8, sanity: 0, hunger: 9.375, icon: '../images/icons/other_edibles/Butterfly_Wings.webp'},
 
-    {id: 113, name: 'Moon Moth Wings', hp: 8, sanity: 15, hunger: 9.375, icon: '../images/icons/other_edibles/Moon_Moth_Wings.webp'},
+    {id: 118, name: 'Moon Moth Wings', hp: 8, sanity: 15, hunger: 9.375, icon: '../images/icons/other_edibles/Moon_Moth_Wings.webp'},
 
-    {id: 114, name: 'Roasted Birchnut', hp: 1, sanity: 0, hunger: 9.375, icon: '../images/icons/other_edibles/Roasted_Birchnut.webp'},
+    {id: 119, name: 'Roasted Birchnut', hp: 1, sanity: 0, hunger: 9.375, icon: '../images/icons/other_edibles/Roasted_Birchnut.webp'},
 
-    {id: 115, name: 'Ice', hp: 0.5, sanity: 0, hunger: 2.3, icon: '../images/icons/other_edibles/Ice.webp'},
+    {id: 120, name: 'Ice', hp: 0.5, sanity: 0, hunger: 2.3, icon: '../images/icons/other_edibles/Ice.webp'},
 
-    {id: 116, name: 'Twigs', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Twigs.webp'},
+    {id: 121, name: 'Twigs', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Twigs.webp'},
 
-    {id: 117, name: 'Bone Shards', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Bone_Shards.webp'},
+    {id: 122, name: 'Bone Shards', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Bone_Shards.webp'},
 
-    {id: 118, name: 'Volt Goat Horn', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Volt_Goat_Horn.webp'},
+    {id: 123, name: 'Volt Goat Horn', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Volt_Goat_Horn.webp'},
 
-    {id: 119, name: 'Moleworm', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', meatValue: 0.5, inedible: true, icon: '../images/icons/inedibles/Moleworm.webp'},
+    {id: 124, name: 'Moleworm', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', meatValue: 0.5, inedible: true, icon: '../images/icons/inedibles/Moleworm.webp'},
 
-    {id: 120, name: 'Nightmare Fuel', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Nightmare_Fuel.webp'},
+    {id: 125, name: 'Nightmare Fuel', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', inedible: true, icon: '../images/icons/inedibles/Nightmare_Fuel.webp'},
 
-    {id: 121, name: 'Collected Dust', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', icon: '../images/icons/inedibles/Collected_Dust.webp'}
+    {id: 126, name: 'Collected Dust', hp: 'N/A', sanity: 'N/A', hunger: 'N/A', icon: '../images/icons/inedibles/Collected_Dust.webp'}
 ];
 
 const shipwreckedIngredients= [
